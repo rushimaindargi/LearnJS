@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="myIOTDeviceBean" class="com.newspring.NewIoTDevice_v1"
+    init-method="initBean" destroy-method="destroyBean"/>
+    <alias name="myIOTDeviceBean" alias="myBean"/>
+<bean id="myIOTDeviceBean2" class="com.newspring.NewIoTDevice_v1"
+    init-method="initBean" destroy-method="destroyBean"/>
+    <alias name="myIOTDeviceBean2" alias="myBean1"/>
+
+</beans>
